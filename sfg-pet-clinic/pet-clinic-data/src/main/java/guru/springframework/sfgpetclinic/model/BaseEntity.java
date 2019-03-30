@@ -7,6 +7,8 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 //Mark this class as superclass so all other classes are going to inherit from this one
+//This also means that we are not going to work with this POJO specifically we just need it for other Entities
+
 @MappedSuperclass
 public class BaseEntity implements Serializable {
 
