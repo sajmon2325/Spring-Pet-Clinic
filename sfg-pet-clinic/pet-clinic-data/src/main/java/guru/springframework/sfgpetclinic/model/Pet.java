@@ -12,6 +12,7 @@ public class Pet extends BaseEntity {
     private PetType petType;
 
     @ManyToOne
+    //JoinColumn we are saying that we are linking Owner table with Pet table using owner_id as foreign key
     @JoinColumn(name = "owner_id")
     private Owner owner;
 
