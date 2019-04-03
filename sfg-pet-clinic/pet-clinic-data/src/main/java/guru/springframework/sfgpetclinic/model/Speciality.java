@@ -13,6 +13,13 @@ public class Speciality extends BaseEntity {
 
 
 
+    public Speciality(String description) {
+        this.description = description;
+    }
+
+    public Speciality() {
+    }
+
     public String getDescription() {
         return description;
     }

@@ -1,9 +1,14 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "vets")
 public class Vet extends Person {

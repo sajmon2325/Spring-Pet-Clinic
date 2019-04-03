@@ -28,10 +28,16 @@ public class Pet extends BaseEntity {
     private Set<Visit> visits = new HashSet<>();
 
 
+    public Pet(PetType petType, Owner owner, LocalDate birthDate, String name, Set<Visit> visits) {
+        this.petType = petType;
+        this.owner = owner;
+        this.birthDate = birthDate;
+        this.name = name;
+        this.visits = visits;
+    }
 
-
-
-
+    public Pet() {
+    }
 
     public Set<Visit> getVisits() {
         return visits;
