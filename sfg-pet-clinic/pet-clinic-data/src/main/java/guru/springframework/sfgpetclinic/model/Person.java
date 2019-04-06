@@ -1,8 +1,16 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.*;
+
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+//We don't use @Builder when we have @AllArgsConstructor. Because they are doing basically the same thing and Java don't allow multiple same constructors
+//@Builder
 //Mark this class as superclass so all other classes are going to inherit from this one
 //This also means that we are not going to work with this POJO specifically we just need it for other Entities
 @MappedSuperclass
@@ -17,27 +25,4 @@ public class Person extends BaseEntity {
 
 
 
-    public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    public Person() {
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }

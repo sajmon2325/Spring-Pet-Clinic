@@ -1,14 +1,19 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
+
+@Getter
+@Setter
 //Mark this class as superclass so all other classes are going to inherit from this one
 //This also means that we are not going to work with this POJO specifically we just need it for other Entities
-
 @MappedSuperclass
 public class BaseEntity implements Serializable {
 
@@ -20,11 +25,5 @@ public class BaseEntity implements Serializable {
     public BaseEntity() {
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 }

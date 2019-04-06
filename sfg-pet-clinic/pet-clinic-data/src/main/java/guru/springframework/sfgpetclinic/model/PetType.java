@@ -1,11 +1,16 @@
 package guru.springframework.sfgpetclinic.model;
 
-import lombok.AllArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "types")
 public class PetType extends BaseEntity {
@@ -14,19 +19,4 @@ public class PetType extends BaseEntity {
     private String name;
 
 
-    public PetType(String name) {
-        this.name = name;
-    }
-
-
-    public PetType() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
