@@ -5,6 +5,7 @@ guru\springframework\sfgpetclinic\model\PetType$PetTypeBuilder.class
 guru\springframework\sfgpetclinic\model\Visit$VisitBuilder.class
 guru\springframework\sfgpetclinic\repositories\VisitRepository.class
 guru\springframework\sfgpetclinic\services\springdatajpa\OwnerSDJpaService.class
+guru\springframework\sfgpetclinic\model\Owner$OwnerBuilder.class
 guru\springframework\sfgpetclinic\services\VisitService.class
 guru\springframework\sfgpetclinic\services\springdatajpa\VetSDJPAService.class
 guru\springframework\sfgpetclinic\services\map\PetTypeMapService.class
