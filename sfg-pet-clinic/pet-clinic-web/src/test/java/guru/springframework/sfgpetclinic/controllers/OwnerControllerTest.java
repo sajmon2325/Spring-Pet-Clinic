@@ -31,6 +31,7 @@ class OwnerControllerTest {
     OwnerService ownerService;
 
     @InjectMocks
+    //This will create a controller mock and inject all mocks (ownerService) into it
     OwnerController controller;
 
     Set<Owner> owners;
