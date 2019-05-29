@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="guru.springframework.sfgpetclinic.SfgPetClinicApplicationTests" time="0" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest" time="0.05" tests="8" errors="2" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,5 +61,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="contextLoads" classname="guru.springframework.sfgpetclinic.SfgPetClinicApplicationTests" time="0"/>
+  <testcase name="saveNoId" classname="guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest" time="0.014"/>
+  <testcase name="saveExistingId" classname="guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest" time="0.011"/>
+  <testcase name="delete" classname="guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest" time="0.001"/>
+  <testcase name="findAll" classname="guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest" time="0.001"/>
+  <testcase name="findById" classname="guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest" time="0.004"/>
+  <testcase name="findLastNameNull" classname="guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest" time="0.003">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest.findLastNameNull(OwnerServiceMapTest.java:89)
+</error>
+  </testcase>
+  <testcase name="findByLastName" classname="guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest" time="0.001">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest.findByLastName(OwnerServiceMapTest.java:81)
+</error>
+  </testcase>
+  <testcase name="deleteById" classname="guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest" time="0.001"/>
 </testsuite>

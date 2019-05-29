@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: guru.springframework.sfgpetclinic.controllers.OwnerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 3.562 s <<< FAILURE! - in guru.springframework.sfgpetclinic.controllers.OwnerControllerTest
+showOwner  Time elapsed: 2.697 s  <<< FAILURE!
+java.lang.AssertionError: 
+Model attribute 'owner'
+Expected: hasProperty("id", is <1L>)
+     but: property 'id' was null
+	at guru.springframework.sfgpetclinic.controllers.OwnerControllerTest.showOwner(OwnerControllerTest.java:115)
+
+processUpdateOwnerForm  Time elapsed: 0.273 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at guru.springframework.sfgpetclinic.controllers.OwnerControllerTest.processUpdateOwnerForm(OwnerControllerTest.java:157)
+
+processFindFormReturnOne  Time elapsed: 0.097 s  <<< FAILURE!
+java.lang.AssertionError: Range for response status value 200 expected:<REDIRECTION> but was:<SUCCESSFUL>
+	at guru.springframework.sfgpetclinic.controllers.OwnerControllerTest.processFindFormReturnOne(OwnerControllerTest.java:104)
+
+initUpdateOwnerForm  Time elapsed: 0.095 s  <<< FAILURE!
+java.lang.AssertionError: View name expected:<owners/createOrUpdateOwnerFrom> but was:<owners/createOrUpdateOwner>
+	at guru.springframework.sfgpetclinic.controllers.OwnerControllerTest.initUpdateOwnerForm(OwnerControllerTest.java:146)
+
+processCreationForm  Time elapsed: 0.179 s  <<< FAILURE!
+java.lang.AssertionError: View name expected:<redirect:/owners/1> but was:<redirect:/owners/null>
+	at guru.springframework.sfgpetclinic.controllers.OwnerControllerTest.processCreationForm(OwnerControllerTest.java:134)
+
+initCreationForm  Time elapsed: 0.047 s  <<< FAILURE!
+java.lang.AssertionError: View name expected:<owners/createOrUpdateOwnerForm> but was:<owners/createOrUpdateOwner>
+	at guru.springframework.sfgpetclinic.controllers.OwnerControllerTest.initCreationForm(OwnerControllerTest.java:122)
+
+processFindFormReturnMany  Time elapsed: 0.027 s  <<< FAILURE!
+java.lang.AssertionError: View name expected:<owners/ownersList> but was:<owners/findOwners>
+	at guru.springframework.sfgpetclinic.controllers.OwnerControllerTest.processFindFormReturnMany(OwnerControllerTest.java:95)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.05 s <<< FAILURE! - in guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest
+findLastNameNull  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.NullPointerException
+	at guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest.findLastNameNull(OwnerServiceMapTest.java:89)
+
+findByLastName  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at guru.springframework.sfgpetclinic.services.map.OwnerServiceMapTest.findByLastName(OwnerServiceMapTest.java:81)
+

@@ -22,7 +22,9 @@ public class Pet extends BaseEntity {
         this.owner = owner;
         this.birthDate = birthDate;
         this.name = name;
-        this.visits = visits;
+        if(visits == null || visits.size() > 0){
+            this.visits = visits;
+        }
     }
 
     @ManyToOne

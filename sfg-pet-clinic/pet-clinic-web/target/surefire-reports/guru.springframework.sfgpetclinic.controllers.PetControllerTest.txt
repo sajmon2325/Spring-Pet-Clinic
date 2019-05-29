@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: guru.springframework.sfgpetclinic.controllers.PetControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.256 s <<< FAILURE! - in guru.springframework.sfgpetclinic.controllers.PetControllerTest
+processUpdateForm  Time elapsed: 0.063 s  <<< FAILURE!
+java.lang.AssertionError: View name expected:<redirect:/owners/1> but was:<redirect:/owners/null>
+	at guru.springframework.sfgpetclinic.controllers.PetControllerTest.processUpdateForm(PetControllerTest.java:113)
+
+initUpdateForm  Time elapsed: 0.034 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at guru.springframework.sfgpetclinic.controllers.PetControllerTest.initUpdateForm(PetControllerTest.java:100)
+
+processCreationForm  Time elapsed: 0.094 s  <<< FAILURE!
+java.lang.AssertionError: View name expected:<redirect:/owners/1> but was:<redirect:/owners/}null>
+	at guru.springframework.sfgpetclinic.controllers.PetControllerTest.processCreationForm(PetControllerTest.java:88)
+
