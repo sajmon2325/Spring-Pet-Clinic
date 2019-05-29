@@ -25,8 +25,10 @@ public class BaseEntity implements Serializable {
         return this.id == null;
     }
 
-
     public BaseEntity() {
+    }
+
+    public BaseEntity(Long id) {
     }
 
 
